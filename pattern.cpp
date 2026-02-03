@@ -164,6 +164,6 @@ int main(){
     int n=4;
    pattern9(n);
  
-   
+    
 }
 
