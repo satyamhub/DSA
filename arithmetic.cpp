@@ -48,3 +48,4 @@ void PrimeNumber(){
 int main(){
    PrimeNumber();
 }
+

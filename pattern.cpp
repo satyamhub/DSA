@@ -257,9 +257,12 @@ void pattern13(int n){
 void pattern14(int n){
     
 }
+
+
 int main(){
     int n=5;
    pattern14(n);
+  
  
     
 }
