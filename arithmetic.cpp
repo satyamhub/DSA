@@ -18,34 +18,64 @@ void EvenOdd(){
 }
 
 void PrimeNumber(){
-   int a;
-   cin>>a;
+    int n;
+    cin>>n;
+    int num=0;
+     for(int i=1; i*i<=n; i++){
+            if(n%i==0){
+              num=num+1;
+              if((n/i)!=i){
+                num++;
+              }
+            }
+         }
+         if(num==2){
+            cout<<"Prime";
+         }else if(num>1){
+            cout<<"Composite";
+         }else{
+            cout<<"Neither Prime nor Composite";
+         }
+}
 
-   bool flag=false;
-
-   for(double i=2; i<=sqrt(a); i++) {
- 
-    cout<<a/i<<endl;
-     if((a/i)*i==a){
-
-        flag=true;
-       
-    }
-    //   else{
-    //     cout<<"Prime";
+int hcf(){
+   //Solution 1
+   // time complexity O(min(x,y))
+   int x,y;
+    cin>>x>>y;
+    int c=min(x,y);
+    for(int i=c; i>=1; i--){
+      if(x%i==0 && y%i==0){
+         cout<<i;
+         return 0;
          
-    //   }
-      
+      }
+    }
+
+    //Solution 2
+   // time complexity O(log base fi (min(x,y))  )
+   int a=x;
+   int b=y;
+ while(a>0 && b>0){
+   if(a>b){
+      a=a%b;
+   }else{
+      b=b%a;
    }
-   if(flag==true){
-    cout<<"Composite";
-   }
-   else{
-    cout<<"Prime";
-   }
+ }
+ if(a==0){
+   cout<<b;
+ }else{
+   cout<<a;
+ }
+
+       
+       
+         
+       
 }
 
 int main(){
-   PrimeNumber();
+  hcf();
 }
 
