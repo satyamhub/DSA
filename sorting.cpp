@@ -2,52 +2,37 @@
 
 using namespace std;
 
-void sorting(){
-
-    string alp1="abcdefghijklmnopqrstuvwxyz";
-
-    string a[27]={"satyam" , "amit" ,"dev"};
-    for(int i=0; i<=2; i++){
-        for(int j=0; j<27; j++){
-            if(a[i][0]==alp1[i]){
-                 string ab[3]= {a['i']};
-            }
-           
-           
+void selection_sort(int arr[], int n){
+    //time Complexity: O(n square)
+    for(int i=0; i<=n-2; i++){
+       int mini=i;
+       for(int j=i; j<=n-1; j++){
+        if(arr[j]<arr[mini]){
+            mini=j;
+        }
         
+       }
+       int temp=arr[mini];
+       arr[mini]=arr[i];
+       arr[i]=temp;
+       
+
     }
-    }
-    
 
-
-    // cout<<sizeof(b);
-    
-    // for(int i=0; i<27; i++){
-        
-    //        if(a[0]==alp1[i] or b[0]==alp1[i] or c[0]==alp1[i]){
-    //            cout<<alp1[i]<<endl;
-        
-    // }
-    // }
-
-
-    
-
-
-
-
-     
 }
 
+
+
+
 int main(){
-    char ch='a';
-    char ch2=(char)(ch+1);
-    cout<<ch2;
-    sorting();
-   
- 
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0; i<n; i++) cin>>arr[i];
+    selection_sort(arr, n);
 
- 
-
-    return  0;
+    for(int i=0; i<n; i++) {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
 }
