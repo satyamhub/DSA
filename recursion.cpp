@@ -86,7 +86,7 @@ int main(){
    // reverseArray(0);
     //printArr(0);
    //checkPalindrome(s,0);
-   //cout<<fiboacci(4);
+   cout<<fiboacci(5);
     
 }
 
