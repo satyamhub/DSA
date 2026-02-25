@@ -83,7 +83,7 @@ int main(){
     //Summation(n,0);
     //reverse(n,1);
     //factorial(n,1);
-   // reverseArray(0);
+    // reverseArray(0);
     //printArr(0);
    //checkPalindrome(s,0);
    cout<<fiboacci(5);
