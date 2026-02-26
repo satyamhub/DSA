@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
 void Summation(int i,int sum){
     if(i<0){
         cout<<sum;
