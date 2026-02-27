@@ -49,10 +49,10 @@ int main()
 
   if (completePrime(num))
   {
-    cout << "True";
+    cout << "true";
   }
   else
   {
-    cout << "False";
+    cout << "false";
   }
 }

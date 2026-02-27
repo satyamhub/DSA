@@ -1,0 +1,1 @@
+{"name":"Local: complete_Prime","url":"/home/satyaminc/DSA/leetcode/complete_Prime.cpp","tests":[{"id":1772219268562,"input":"313","output":"true"},{"id":1772219408996,"input":"31","output":"false"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/satyaminc/DSA/leetcode/complete_Prime.cpp","group":"local","local":true}
