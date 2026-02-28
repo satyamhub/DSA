@@ -1,0 +1,1 @@
+{"name":"Local: array","url":"/home/satyaminc/DSA/array.cpp","tests":[{"id":1772310453292,"input":"6\n1 3 3 3 3 3","output":"2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/satyaminc/DSA/array.cpp","group":"local","local":true}
