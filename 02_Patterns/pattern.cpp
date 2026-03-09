@@ -102,6 +102,7 @@ void pattern6(int n) {
 }
 
 void pattern7(int n) {
+
     //       *
     //      ***
     //     *****
