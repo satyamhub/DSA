@@ -10,10 +10,11 @@ void leaders(vector<int> &nums){
   for(int i=n-1; i>=0; i--){
     
     if(nums[i]>leader){
-      leader=max(leader,nums[i]);
-      cout<<leader<<" ";
+      
+      cout<<nums[i]<<" ";
       
     }
+    leader=max(leader,nums[i]);
   }
 
 }
