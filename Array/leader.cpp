@@ -6,6 +6,7 @@ void leaders(vector<int> &nums){
   
   
   
+  
   int leader=-1;
   
   for(int i=n-1; i>=0; i--){
