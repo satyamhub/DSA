@@ -1,42 +1,34 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int target(vector<int> &nums, int k){
+    vector<int> freq(60, 0);
+    int cnt = 0;
+    
+    for (int x : nums) {
+        
+        int rem = x % 60;
+        int needed = (60 - rem) % 60;
+        cnt=cnt+ freq[needed];
+        
+        freq[rem]++;
+    }
+
+    return cnt;
+
+}
+
+
+
+
 int main() {
 
-    int n;
-    cin >> n;
+   int n;
+   cin>>n;
+   vector<int> arr(n);
+   for(int i=0; i<n; i++){
+    cin>>arr[i];
+   }
+   cout<<target(arr,60);
 
-    vector<int> arr(n);
-    for(int i = 0; i < n; i++){
-        cin >> arr[i];
-    }
-
-    unordered_map<int,int> mp;
-    mp[0] = -1;
-
-    int sum = 0;
-    int left = -1, right = -1;
-    int maxLen = 0;
-
-    for(int i = 0; i < n; i++){
-
-        if(arr[i] == 1) sum += 1;
-        else sum -= 1;
-
-        if(mp.find(sum) != mp.end()){
-
-            int len = i - mp[sum];
-
-            if(len > maxLen){
-                maxLen = len;
-                left = mp[sum] + 1;
-                right = i;
-            }
-
-        } else {
-            mp[sum] = i;
-        }
-    }
-
-    cout << left << " to " << right;
 }
