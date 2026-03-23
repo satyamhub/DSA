@@ -6,6 +6,8 @@
     "eamodio.gitlens",
     "streetsidesoftware.code-spell-checker",
     "yzhang.markdown-all-in-one",
-    "pkief.material-icon-theme"
+    "pkief.material-icon-theme",
+    "alefragnani.bookmarks",
+    "wayou.vscode-todo-highlight"
   ]
 }
