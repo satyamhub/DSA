@@ -11,6 +11,7 @@ This repository is now arranged by topic so you can study in a cleaner order.
 5. `05_Arrays/`
 6. `06_Hashing/`
 7. `07_STL/`
+8. `08_Binary_Search/`
 
 ## Folder Guide
 
@@ -21,6 +22,7 @@ This repository is now arranged by topic so you can study in a cleaner order.
 - `05_Arrays/`: array questions split into `Easy/` and `Medium/`.
 - `06_Hashing/`: number hashing and character hashing.
 - `07_STL/`: STL practice with `unordered_set`.
+- `08_Binary_Search/`: starter binary search problems and notes for sorted-array search patterns.
 - `build/`: compiled output files kept out of the main study path.
 - `practice_io/`: input and output helper files.
 

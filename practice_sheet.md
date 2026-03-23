@@ -43,3 +43,9 @@
 - `03_Recursion/reverse_array.cpp`
 - `03_Recursion/palindrome_check.cpp`
 - `03_Recursion/fibonacci.cpp`
+
+## Day 5 Binary Search
+
+- `08_Binary_Search/binary_search.cpp`
+- `08_Binary_Search/lower_bound.cpp`
+- `08_Binary_Search/search_insert_position.cpp`
