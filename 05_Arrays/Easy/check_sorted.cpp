@@ -6,6 +6,13 @@ Problem: Check if an array is sorted in non-decreasing order
 
 Pattern: linear scan
 
+Sample Input:
+5
+1 2 2 4 5
+
+Sample Output:
+true
+
 Idea:
 - Compare each element with the previous one.
 

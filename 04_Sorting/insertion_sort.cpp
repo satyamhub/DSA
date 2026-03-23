@@ -6,6 +6,13 @@ Problem: Insertion Sort
 
 Pattern: sorting
 
+Sample Input:
+5
+12 11 13 5 6
+
+Sample Output:
+5 6 11 12 13
+
 Approach: Insert each element into its correct place in the sorted left portion
 - Time: O(n^2) average and worst case
 - Time: O(n) best case for already sorted array

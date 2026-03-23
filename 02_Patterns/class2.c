@@ -4,6 +4,14 @@
 Practice File: Simple Calculator In C
 
 Pattern: switch case, arithmetic
+
+Sample Input:
+10
+5
++
+
+Sample Output:
+15
 */
 void man(){
 

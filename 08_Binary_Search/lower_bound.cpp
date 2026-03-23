@@ -6,6 +6,14 @@ Problem: Lower Bound
 
 Pattern: binary search, boundary search
 
+Sample Input:
+5
+1 3 3 5 8
+4
+
+Sample Output:
+3
+
 Idea:
 - Find the first index where `arr[index] >= target`.
 

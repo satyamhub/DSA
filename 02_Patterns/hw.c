@@ -4,6 +4,12 @@
 Practice File: Shape And Name Drawing
 
 Pattern: nested loops, pattern printing
+
+Sample Input:
+No input
+
+Sample Output:
+Depends on whether `man()` or `name()` is enabled in `main()`.
 */
 
 int main(){

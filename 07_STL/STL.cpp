@@ -6,6 +6,12 @@ using namespace std;
 Practice File: unordered_set Basics
 
 Pattern: STL, hashing container
+
+Sample Input:
+No input
+
+Sample Output:
+Shows insert, find, erase, size, empty, and clear operations on an unordered_set.
 */
 
 int main() {

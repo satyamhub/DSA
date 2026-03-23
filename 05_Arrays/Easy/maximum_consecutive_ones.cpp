@@ -6,6 +6,13 @@ Maximum Consecutive Ones
 
 Pattern: linear scan
 
+Sample Input:
+6
+1 1 0 1 1 1
+
+Sample Output:
+3
+
 - Brute/basic linear scan
 - Time: O(n)
 - Space: O(1)

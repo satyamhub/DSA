@@ -6,6 +6,13 @@ Move All Zeroes To End
 
 Pattern: two pointers
 
+Sample Input:
+5
+0 1 0 3 12
+
+Sample Output:
+1 3 12 0 0
+
 1. Brute
    - Repeatedly bubble non-zero values left
    - Time: O(n^2), Space: O(1)

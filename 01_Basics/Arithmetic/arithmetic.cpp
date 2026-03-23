@@ -6,6 +6,12 @@ Arithmetic and Number Theory Basics
 
 Pattern: math, number theory
 
+Sample Input:
+12 18
+
+Sample Output:
+6
+
 1. Even or odd
    - Time: O(1), Space: O(1)
 

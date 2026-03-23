@@ -6,6 +6,13 @@ Missing Number in range [0, n]
 
 Pattern: math, bit manipulation
 
+Sample Input:
+5
+0 1 2 4 5
+
+Sample Output:
+3
+
 1. Brute
    - Check every number from 0 to n by scanning the array
    - Time: O(n^2), Space: O(1)

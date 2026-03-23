@@ -6,6 +6,13 @@ Merge Sort
 
 Pattern: sorting, divide and conquer
 
+Sample Input:
+5
+38 27 43 3 9
+
+Sample Output:
+3 9 27 38 43
+
 - Divide and conquer algorithm
 - Time: O(n log n) in best, average, and worst case
 - Space: O(n) because of the temporary merge array

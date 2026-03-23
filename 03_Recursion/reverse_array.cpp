@@ -6,6 +6,13 @@ Problem: Reverse an array using recursion
 
 Pattern: recursion, two pointers
 
+Sample Input:
+5
+1 2 3 4 5
+
+Sample Output:
+5 4 3 2 1
+
 Approach: Two-pointer recursion
 - Swap ends and move inward
 - Time: O(n)

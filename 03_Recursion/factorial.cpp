@@ -6,6 +6,12 @@ Problem: Factorial of N using recursion
 
 Pattern: recursion
 
+Sample Input:
+5
+
+Sample Output:
+120
+
 Approach 1: Parameterized recursion
 - Time: O(n)
 - Space: O(n)

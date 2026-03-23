@@ -6,6 +6,14 @@ Left Rotate Array By K Places
 
 Pattern: array manipulation, reversal
 
+Sample Input:
+5
+1 2 3 4 5
+2
+
+Sample Output:
+3 4 5 1 2
+
 1. Brute
    - Rotate left by one, K times
    - Time: O(n * k), Space: O(1)

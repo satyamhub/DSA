@@ -6,6 +6,14 @@ Problem: Binary Search
 
 Pattern: binary search
 
+Sample Input:
+5
+1 3 5 7 9
+7
+
+Sample Output:
+3
+
 Idea:
 - Use the sorted property of the array to remove half of the search space each step.
 

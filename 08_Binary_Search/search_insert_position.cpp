@@ -6,6 +6,14 @@ Problem: Search Insert Position
 
 Pattern: binary search, boundary search
 
+Sample Input:
+4
+1 3 5 6
+2
+
+Sample Output:
+1
+
 Idea:
 - The answer is the lower bound of the target.
 

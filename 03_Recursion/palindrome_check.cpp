@@ -6,6 +6,12 @@ Problem: Check whether a string is a palindrome using recursion
 
 Pattern: recursion, two pointers
 
+Sample Input:
+madam
+
+Sample Output:
+true
+
 Approach: Compare symmetric characters recursively
 - Time: O(n)
 - Space: O(n)

@@ -6,6 +6,15 @@ Union of Two Sorted Arrays
 
 Pattern: two pointers
 
+Sample Input:
+5
+1 2 2 3 4
+4
+2 3 5 6
+
+Sample Output:
+1 2 3 4 5 6
+
 1. Brute
    - Insert all values into set
    - Time: O((n + m) log(n + m)), Space: O(n + m)

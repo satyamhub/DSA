@@ -6,6 +6,13 @@ Problem: Bubble Sort
 
 Pattern: sorting
 
+Sample Input:
+5
+5 1 4 2 8
+
+Sample Output:
+1 2 4 5 8
+
 Approach: Repeatedly swap adjacent out-of-order elements
 - Time: O(n^2) average and worst case
 - Time: O(n) best case with early exit

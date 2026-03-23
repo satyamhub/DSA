@@ -6,6 +6,13 @@ Problem: Selection Sort
 
 Pattern: sorting
 
+Sample Input:
+5
+64 25 12 22 11
+
+Sample Output:
+11 12 22 25 64
+
 Approach: Repeatedly place the minimum element at the current index
 - Time: O(n^2) in best, average, and worst case
 - Space: O(1)

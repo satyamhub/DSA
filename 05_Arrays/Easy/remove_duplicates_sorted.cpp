@@ -6,6 +6,13 @@ Problem: Remove duplicates from a sorted array
 
 Pattern: two pointers
 
+Sample Input:
+7
+1 1 2 2 2 3 4
+
+Sample Output:
+1 2 3 4
+
 Idea:
 - Use a write pointer to place the next unique element.
 

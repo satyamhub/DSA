@@ -6,6 +6,13 @@ Majority Element (> n / 2 occurrences)
 
 Pattern: hashing, Boyer-Moore voting
 
+Sample Input:
+7
+2 2 1 1 1 2 2
+
+Sample Output:
+2
+
 1. Brute
    - Count frequency for every element
    - Time: O(n^2), Space: O(1)

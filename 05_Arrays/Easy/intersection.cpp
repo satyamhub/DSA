@@ -6,6 +6,15 @@ Intersection of Two Sorted Arrays
 
 Pattern: two pointers
 
+Sample Input:
+5
+1 2 2 3 4
+4
+2 2 4 6
+
+Sample Output:
+2 2 4
+
 1. Brute
    - Nested loops with visited handling
    - Time: O(n * m), Space: O(m) if visited array is used

@@ -6,6 +6,19 @@ Hashing Basics
 
 Pattern: hashing, frequency counting
 
+Sample Input:
+5
+1 2 1 3 2
+3
+1
+2
+4
+
+Sample Output:
+2
+2
+0
+
 1. Number Hashing
    - Frequency of numbers using map
    - Precomputation Time: O(n log n) with map

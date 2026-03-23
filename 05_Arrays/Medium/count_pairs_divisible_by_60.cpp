@@ -6,6 +6,13 @@ Count Pairs Whose Sum Is Divisible By 60
 
 Pattern: hashing, modular arithmetic
 
+Sample Input:
+4
+30 20 150 100
+
+Sample Output:
+3
+
 1. Brute
    - Check every pair
    - Time: O(n^2), Space: O(1)

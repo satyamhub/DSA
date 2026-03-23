@@ -6,6 +6,14 @@ Linear Search
 
 Pattern: linear scan
 
+Sample Input:
+5
+10 20 30 40 50
+30
+
+Sample Output:
+2
+
 - Brute/basic approach: scan left to right
 - Time: O(n)
 - Space: O(1)

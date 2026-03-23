@@ -6,6 +6,13 @@ Problem: Second largest element in an array
 
 Pattern: linear scan
 
+Sample Input:
+5
+3 7 2 9 4
+
+Sample Output:
+7
+
 Idea:
 - Track largest and second largest while traversing once.
 

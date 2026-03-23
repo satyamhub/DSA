@@ -6,6 +6,13 @@ Quick Sort
 
 Pattern: sorting, divide and conquer
 
+Sample Input:
+5
+10 7 8 9 1
+
+Sample Output:
+1 7 8 9 10
+
 - Divide and conquer, in-place partitioning
 - Best/Average Time: O(n log n)
 - Worst Time: O(n^2)

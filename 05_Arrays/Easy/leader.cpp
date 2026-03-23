@@ -6,6 +6,13 @@ Leaders in an Array
 
 Pattern: reverse traversal
 
+Sample Input:
+6
+16 17 4 3 5 2
+
+Sample Output:
+17 5 2
+
 1. Brute
    - For each element, check all elements to its right
    - Time: O(n^2), Space: O(1)

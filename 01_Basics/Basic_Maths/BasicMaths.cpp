@@ -6,6 +6,17 @@ Basic Maths Problems
 
 Pattern: math, digit manipulation
 
+Sample Input:
+12
+
+Sample Output:
+1
+2
+3
+4
+6
+12
+
 1. Reverse integer
    - Time: O(d), Space: O(1), where d is number of digits
 
@@ -17,17 +28,21 @@ Pattern: math, digit manipulation
    - Better: O(sqrt(n)) with divisor pairing
 */
 
-int reverseNumber(int x) {
+int reverseNumber(int x)
+{
     int reversed = 0;
 
-    while (x != 0) {
+    while (x != 0)
+    {
         int digit = x % 10;
         x /= 10;
 
-        if (reversed > INT_MAX / 10 || (reversed == INT_MAX / 10 && digit > 7)) {
+        if (reversed > INT_MAX / 10 || (reversed == INT_MAX / 10 && digit > 7))
+        {
             return 0;
         }
-        if (reversed < INT_MIN / 10 || (reversed == INT_MIN / 10 && digit < -8)) {
+        if (reversed < INT_MIN / 10 || (reversed == INT_MIN / 10 && digit < -8))
+        {
             return 0;
         }
 
@@ -37,11 +52,13 @@ int reverseNumber(int x) {
     return reversed;
 }
 
-bool isArmstrong(int x) {
+bool isArmstrong(int x)
+{
     int original = x;
     int sum = 0;
 
-    while (x != 0) {
+    while (x != 0)
+    {
         int digit = x % 10;
         x /= 10;
         sum += digit * digit * digit;
@@ -50,13 +67,17 @@ bool isArmstrong(int x) {
     return sum == original;
 }
 
-vector<int> divisorsBetter(int x) {
+vector<int> divisorsBetter(int x)
+{
     vector<int> result;
 
-    for (int i = 1; i * i <= x; i++) {
-        if (x % i == 0) {
+    for (int i = 1; i * i <= x; i++)
+    {
+        if (x % i == 0)
+        {
             result.push_back(i);
-            if (i != x / i) {
+            if (i != x / i)
+            {
                 result.push_back(x / i);
             }
         }
@@ -66,12 +87,14 @@ vector<int> divisorsBetter(int x) {
     return result;
 }
 
-int main() {
+int main()
+{
     int x;
     cin >> x;
 
     vector<int> result = divisorsBetter(x);
-    for (int value : result) {
+    for (int value : result)
+    {
         cout << value << '\n';
     }
 

@@ -6,6 +6,12 @@ using namespace std;
 Practice File: Pattern Printing
 
 Pattern: nested loops, pattern printing
+
+Sample Input:
+No input
+
+Sample Output:
+Depends on which `patternX()` call is enabled in `main()`.
 */
 
 
