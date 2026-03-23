@@ -15,11 +15,13 @@ Pattern: hashing, modular arithmetic
    - Time: O(n), Space: O(1) because remainder range is fixed
 */
 
-int countPairsDivisibleBy60(const vector<int> &nums) {
+int countPairsDivisibleBy60(const vector<int> &nums)
+{
     vector<int> freq(60, 0);
     int count = 0;
 
-    for (int value : nums) {
+    for (int value : nums)
+    {
         int rem = value % 60;
         int needed = (60 - rem) % 60;
         count += freq[needed];
@@ -29,12 +31,14 @@ int countPairsDivisibleBy60(const vector<int> &nums) {
     return count;
 }
 
-int main() {
+int main()
+{
     int n;
     cin >> n;
 
     vector<int> nums(n);
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cin >> nums[i];
     }
 

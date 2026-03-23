@@ -1,47 +1,126 @@
-//For Windows
-
-// {
-//     "version": "2.0.0",
-//     "tasks": [
-//         {
-//             "label": "Build and Run C++ (Windows)",
-//             "type": "shell",
-//             "command": "cmd.exe",
-//             "args": [
-//                 "/c",
-//                 "g++ -std=c++17 \"${file}\" -o \"${fileBasenameNoExtension}.exe\" && type input.txt | \"${fileBasenameNoExtension}.exe\" > output.txt"
-//             ],
-//             "group": {
-//                 "kind": "build",
-//                 "isDefault": true
-//             },
-//             "presentation": {
-//                 "reveal": "always",
-//                 "panel": "shared"
-//             }
-//         }
-//     ]
-// }
-
-
-
-//for Ubuntu
-
 {
-    "version": "2.0.0",
-    "tasks": [
-        {
-            "label": "Build and Run C++",
-            "type": "shell",
-            "command": "bash",
-            "args": [
-                "-c",
-                "g++ -std=c++17 ${file} -o ${fileBasenameNoExtension} && ./${fileBasenameNoExtension} < input.txt > output.txt"
-            ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build Current C++ File (Windows)",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "windows": {
+        "group": {
+          "kind": "build",
+          "isDefault": true
         }
-    ]
+      }
+    },
+    {
+      "label": "Run Current C++ File (Windows)",
+      "type": "shell",
+      "command": "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe",
+      "dependsOn": "Build Current C++ File (Windows)",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "windows": {}
+    },
+    {
+      "label": "Build and Run with practice_io (Windows)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "& { g++ -std=c++17 -Wall -Wextra -g '${file}' -o '${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe'; if ($LASTEXITCODE -eq 0) { Get-Content '${workspaceFolder}\\practice_io\\input.txt' | & '${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe' | Set-Content '${workspaceFolder}\\practice_io\\output.txt'; Get-Content '${workspaceFolder}\\practice_io\\output.txt' } }"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "windows": {}
+    },
+    {
+      "label": "Build Current C++ File (Ubuntu)",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "-g",
+        "${file}",
+        "-o",
+        "${workspaceFolder}/build/${fileBasenameNoExtension}"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "linux": {
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    },
+    {
+      "label": "Run Current C++ File (Ubuntu)",
+      "type": "shell",
+      "command": "${workspaceFolder}/build/${fileBasenameNoExtension}",
+      "dependsOn": "Build Current C++ File (Ubuntu)",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "linux": {}
+    },
+    {
+      "label": "Build and Run with practice_io (Ubuntu)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "g++ -std=c++17 -Wall -Wextra -g '${file}' -o '${workspaceFolder}/build/${fileBasenameNoExtension}' && '${workspaceFolder}/build/${fileBasenameNoExtension}' < '${workspaceFolder}/practice_io/input.txt' > '${workspaceFolder}/practice_io/output.txt' && cat '${workspaceFolder}/practice_io/output.txt'"
+      ],
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "linux": {}
+    }
+  ]
 }
