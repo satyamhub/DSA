@@ -21,6 +21,6 @@ This topic is split by difficulty.
 
 - `Medium/majority_elements.cpp`
 - `Medium/longest_subArray.cpp`
-- `Medium/test.cpp`
+- `Medium/count_pairs_divisible_by_60.cpp`
 
 Recommended order: finish all `Easy/` files first, then move to `Medium/`.
