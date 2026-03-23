@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Insertion Sort
 
+Pattern: sorting
+
 Approach: Insert each element into its correct place in the sorted left portion
 - Time: O(n^2) average and worst case
 - Time: O(n) best case for already sorted array

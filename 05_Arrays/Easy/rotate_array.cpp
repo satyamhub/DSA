@@ -4,6 +4,8 @@ using namespace std;
 /*
 Left Rotate Array By K Places
 
+Pattern: array manipulation, reversal
+
 1. Brute
    - Rotate left by one, K times
    - Time: O(n * k), Space: O(1)

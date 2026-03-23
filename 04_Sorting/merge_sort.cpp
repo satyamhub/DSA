@@ -4,6 +4,8 @@ using namespace std;
 /*
 Merge Sort
 
+Pattern: sorting, divide and conquer
+
 - Divide and conquer algorithm
 - Time: O(n log n) in best, average, and worst case
 - Space: O(n) because of the temporary merge array

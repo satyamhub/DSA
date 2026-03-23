@@ -4,6 +4,8 @@ using namespace std;
 /*
 Union of Two Sorted Arrays
 
+Pattern: two pointers
+
 1. Brute
    - Insert all values into set
    - Time: O((n + m) log(n + m)), Space: O(n + m)

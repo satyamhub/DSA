@@ -2,6 +2,12 @@
 
 This folder is now split into one problem per file.
 
+## Prerequisites
+
+- Finish `01_Basics/` first.
+- Be comfortable with functions, loops, and basic arrays/strings before recursion.
+- Learn basic recursion before moving later to subsequences and backtracking.
+
 Study order:
 
 1. `sum_of_first_n.cpp`

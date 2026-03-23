@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Check whether a string is a palindrome using recursion
 
+Pattern: recursion, two pointers
+
 Approach: Compare symmetric characters recursively
 - Time: O(n)
 - Space: O(n)

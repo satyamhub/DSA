@@ -4,6 +4,8 @@ using namespace std;
 /*
 Intersection of Two Sorted Arrays
 
+Pattern: two pointers
+
 1. Brute
    - Nested loops with visited handling
    - Time: O(n * m), Space: O(m) if visited array is used

@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+/*
+Practice File: Beginner C Programs
+
+Pattern: control flow, loops, basic arithmetic
+*/
+
 
  
 void leapyear(){

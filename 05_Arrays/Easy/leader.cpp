@@ -4,6 +4,8 @@ using namespace std;
 /*
 Leaders in an Array
 
+Pattern: reverse traversal
+
 1. Brute
    - For each element, check all elements to its right
    - Time: O(n^2), Space: O(1)

@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Reverse an array using recursion
 
+Pattern: recursion, two pointers
+
 Approach: Two-pointer recursion
 - Swap ends and move inward
 - Time: O(n)

@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Find nth Fibonacci number
 
+Pattern: recursion, iteration
+
 Approach 1: Brute recursive solution
 - fibonacci(n) = fibonacci(n - 1) + fibonacci(n - 2)
 - Time: O(2^n)

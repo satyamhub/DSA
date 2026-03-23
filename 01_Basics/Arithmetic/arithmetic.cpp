@@ -4,6 +4,8 @@ using namespace std;
 /*
 Arithmetic and Number Theory Basics
 
+Pattern: math, number theory
+
 1. Even or odd
    - Time: O(1), Space: O(1)
 

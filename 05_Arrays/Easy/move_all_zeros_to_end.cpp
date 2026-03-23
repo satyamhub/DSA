@@ -4,6 +4,8 @@ using namespace std;
 /*
 Move All Zeroes To End
 
+Pattern: two pointers
+
 1. Brute
    - Repeatedly bubble non-zero values left
    - Time: O(n^2), Space: O(1)

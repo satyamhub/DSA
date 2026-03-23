@@ -4,6 +4,8 @@ using namespace std;
 /*
 Quick Sort
 
+Pattern: sorting, divide and conquer
+
 - Divide and conquer, in-place partitioning
 - Best/Average Time: O(n log n)
 - Worst Time: O(n^2)

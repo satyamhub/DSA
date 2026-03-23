@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Second largest element in an array
 
+Pattern: linear scan
+
 Idea:
 - Track largest and second largest while traversing once.
 

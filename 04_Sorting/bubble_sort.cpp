@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Bubble Sort
 
+Pattern: sorting
+
 Approach: Repeatedly swap adjacent out-of-order elements
 - Time: O(n^2) average and worst case
 - Time: O(n) best case with early exit

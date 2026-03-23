@@ -4,6 +4,8 @@ using namespace std;
 /*
 Count Pairs Whose Sum Is Divisible By 60
 
+Pattern: hashing, modular arithmetic
+
 1. Brute
    - Check every pair
    - Time: O(n^2), Space: O(1)

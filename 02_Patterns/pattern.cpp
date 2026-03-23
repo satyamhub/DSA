@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/*
+Practice File: Pattern Printing
+
+Pattern: nested loops, pattern printing
+*/
+
 
 void pattern1(int n){
 //    ****

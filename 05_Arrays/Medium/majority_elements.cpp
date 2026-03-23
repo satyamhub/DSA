@@ -4,6 +4,8 @@ using namespace std;
 /*
 Majority Element (> n / 2 occurrences)
 
+Pattern: hashing, Boyer-Moore voting
+
 1. Brute
    - Count frequency for every element
    - Time: O(n^2), Space: O(1)

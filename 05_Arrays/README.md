@@ -2,6 +2,12 @@
 
 This topic is split by difficulty.
 
+## Prerequisites
+
+- Finish `01_Basics/` first.
+- Sorting is helpful but not required for all array problems.
+- Learn basic arrays before moving later to sliding window, prefix sums, and hashing-heavy problems.
+
 ## Easy
 
 - `Easy/linear_search.cpp`

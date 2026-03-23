@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Check if an array is sorted in non-decreasing order
 
+Pattern: linear scan
+
 Idea:
 - Compare each element with the previous one.
 

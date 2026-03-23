@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Selection Sort
 
+Pattern: sorting
+
 Approach: Repeatedly place the minimum element at the current index
 - Time: O(n^2) in best, average, and worst case
 - Space: O(1)

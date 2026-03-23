@@ -4,6 +4,8 @@ using namespace std;
 /*
 Basic Maths Problems
 
+Pattern: math, digit manipulation
+
 1. Reverse integer
    - Time: O(d), Space: O(1), where d is number of digits
 

@@ -4,6 +4,8 @@ using namespace std;
 /*
 Hashing Basics
 
+Pattern: hashing, frequency counting
+
 1. Number Hashing
    - Frequency of numbers using map
    - Precomputation Time: O(n log n) with map

@@ -2,6 +2,12 @@
 
 This folder is now split into one algorithm per file.
 
+## Prerequisites
+
+- Finish `01_Basics/` first.
+- Basic array traversal should already feel comfortable.
+- Arrays are enough to start sorting; recursion helps for `merge_sort.cpp` and `quick_sort.cpp`.
+
 Study order:
 
 1. `selection_sort.cpp`

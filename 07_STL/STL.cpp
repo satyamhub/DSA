@@ -2,6 +2,12 @@
 
 using namespace std;
 
+/*
+Practice File: unordered_set Basics
+
+Pattern: STL, hashing container
+*/
+
 int main() {
     // Declare an unordered_set of integers
     unordered_set <int> s;

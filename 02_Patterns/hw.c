@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+/*
+Practice File: Shape And Name Drawing
+
+Pattern: nested loops, pattern printing
+*/
+
 int main(){
     int a,b;
     char c;

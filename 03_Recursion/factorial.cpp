@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Factorial of N using recursion
 
+Pattern: recursion
+
 Approach 1: Parameterized recursion
 - Time: O(n)
 - Space: O(n)

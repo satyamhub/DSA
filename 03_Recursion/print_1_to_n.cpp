@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Print numbers from 1 to N using recursion
 
+Pattern: recursion, backtracking
+
 Approach: Backtracking recursion
 - Recurse down to 1, print while returning
 - Time: O(n)

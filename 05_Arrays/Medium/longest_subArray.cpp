@@ -4,6 +4,8 @@ using namespace std;
 /*
 Longest Subarray With Sum K
 
+Pattern: prefix sum, hashing, sliding window
+
 1. Brute
    - Check every subarray
    - Time: O(n^2), Space: O(1)

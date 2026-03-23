@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Sum of first N natural numbers using recursion
 
+Pattern: recursion
+
 Approach 1: Parameterized recursion
 - Pass current number and running sum
 - Time: O(n)

@@ -4,6 +4,8 @@ using namespace std;
 /*
 Maximum Consecutive Ones
 
+Pattern: linear scan
+
 - Brute/basic linear scan
 - Time: O(n)
 - Space: O(1)

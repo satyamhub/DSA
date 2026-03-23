@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Largest element in an array
 
+Pattern: linear scan
+
 Idea:
 - Track the maximum seen so far while traversing the array once.
 

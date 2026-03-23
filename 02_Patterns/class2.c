@@ -1,4 +1,10 @@
 #include<stdio.h>
+
+/*
+Practice File: Simple Calculator In C
+
+Pattern: switch case, arithmetic
+*/
 void man(){
 
 for (int i=0; i<=10; i++){

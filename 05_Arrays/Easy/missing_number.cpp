@@ -4,6 +4,8 @@ using namespace std;
 /*
 Missing Number in range [0, n]
 
+Pattern: math, bit manipulation
+
 1. Brute
    - Check every number from 0 to n by scanning the array
    - Time: O(n^2), Space: O(1)

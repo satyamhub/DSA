@@ -25,3 +25,8 @@ This repository is now arranged by topic so you can study in a cleaner order.
 - `practice_io/`: input and output helper files.
 
 Start with the README inside each topic folder before opening the code files.
+
+## Revision Helpers
+
+- `practice_sheet.md`: a simple day-by-day revision order.
+- `mistakes.md`: a running list of common bugs and habits to watch during practice.

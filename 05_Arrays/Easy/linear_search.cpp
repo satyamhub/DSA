@@ -4,6 +4,8 @@ using namespace std;
 /*
 Linear Search
 
+Pattern: linear scan
+
 - Brute/basic approach: scan left to right
 - Time: O(n)
 - Space: O(1)

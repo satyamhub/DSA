@@ -4,6 +4,8 @@ using namespace std;
 /*
 Problem: Remove duplicates from a sorted array
 
+Pattern: two pointers
+
 Idea:
 - Use a write pointer to place the next unique element.
 
