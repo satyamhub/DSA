@@ -1,14 +1,21 @@
 {
   "workbench.colorTheme": "Default Dark Modern",
-  "workbench.iconTheme": "vs-seti",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.startupEditor": "none",
   "workbench.editor.labelFormat": "medium",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.empty.hint": "hidden",
   "workbench.tree.indent": 18,
   "workbench.list.smoothScrolling": true,
+  "workbench.activityBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "window.commandCenter": true,
+  "window.menuBarVisibility": "toggle",
   "editor.fontFamily": "Cascadia Code, Consolas, monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.lineHeight": 1.6,
+  "editor.semanticHighlighting.enabled": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.minimap.enabled": false,
@@ -20,6 +27,8 @@
   "editor.stickyScroll.enabled": true,
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
@@ -31,6 +40,8 @@
   "editor.tabSize": 4,
   "editor.insertSpaces": true,
   "editor.detectIndentation": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.occurrencesHighlight": "singleFile",
   "editor.accessibilitySupport": "off",
   "breadcrumbs.enabled": true,
   "files.trimTrailingWhitespace": true,
@@ -46,13 +57,25 @@
     "**/build": true,
     "**/*.exe": true
   },
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "README.md": "notes.md, practice_sheet.md, mistakes.md",
+    "*.cpp": "${capture}.exe",
+    "*.c": "${capture}.exe"
+  },
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
+  "markdown.preview.fontSize": 15,
+  "markdown.preview.lineHeight": 1.6,
+  "markdown.validate.enabled": true,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
   "terminal.integrated.fontFamily": "Cascadia Code, Consolas, monospace",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 5000,
+  "terminal.integrated.cursorBlinking": true,
   "debug.console.fontSize": 14,
+  "debug.openDebug": "openOnDebugBreak",
   "git.autofetch": true,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -70,6 +93,14 @@
   },
   "[c]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    }
   },
   "files.associations": {
     "*.tcc": "cpp"
