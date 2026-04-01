@@ -2,6 +2,23 @@
   "version": "2.0.0",
   "tasks": [
     {
+      "label": "Create build directory (Windows)",
+      "type": "shell",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-ExecutionPolicy",
+        "Bypass",
+        "-Command",
+        "New-Item -ItemType Directory -Force '${workspaceFolder}\\build' | Out-Null"
+      ],
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated"
+      },
+      "windows": {}
+    },
+    {
       "label": "Build Current C++ File (Windows)",
       "type": "shell",
       "command": "g++",
@@ -15,6 +32,7 @@
         "${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe"
       ],
       "group": "build",
+      "dependsOn": "Create build directory (Windows)",
       "presentation": {
         "reveal": "always",
         "panel": "shared",
@@ -52,6 +70,7 @@
         "-Command",
         "& { g++ -std=c++17 -Wall -Wextra -g '${file}' -o '${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe'; if ($LASTEXITCODE -eq 0) { Get-Content '${workspaceFolder}\\practice_io\\input.txt' | & '${workspaceFolder}\\build\\${fileBasenameNoExtension}.exe' | Set-Content '${workspaceFolder}\\practice_io\\output.txt'; Get-Content '${workspaceFolder}\\practice_io\\output.txt' } }"
       ],
+      "dependsOn": "Create build directory (Windows)",
       "group": "build",
       "presentation": {
         "reveal": "always",
@@ -62,6 +81,20 @@
         "$gcc"
       ],
       "windows": {}
+    },
+    {
+      "label": "Create build directory (Ubuntu)",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "mkdir -p '${workspaceFolder}/build'"
+      ],
+      "presentation": {
+        "reveal": "never",
+        "panel": "dedicated"
+      },
+      "linux": {}
     },
     {
       "label": "Build Current C++ File (Ubuntu)",
@@ -77,6 +110,7 @@
         "${workspaceFolder}/build/${fileBasenameNoExtension}"
       ],
       "group": "build",
+      "dependsOn": "Create build directory (Ubuntu)",
       "presentation": {
         "reveal": "always",
         "panel": "shared",
@@ -109,8 +143,9 @@
       "command": "bash",
       "args": [
         "-c",
-        "g++ -std=c++17 -Wall -Wextra -g '${file}' -o '${workspaceFolder}/build/${fileBasenameNoExtension}' && '${workspaceFolder}/build/${fileBasenameNoExtension}' < '${workspaceFolder}/practice_io/input.txt' > '${workspaceFolder}/practice_io/output.txt' && cat '${workspaceFolder}/practice_io/output.txt'"
+        "mkdir -p '${workspaceFolder}/build' && g++ -std=c++17 -Wall -Wextra -g '${file}' -o '${workspaceFolder}/build/${fileBasenameNoExtension}' && '${workspaceFolder}/build/${fileBasenameNoExtension}' < '${workspaceFolder}/practice_io/input.txt' > '${workspaceFolder}/practice_io/output.txt' && cat '${workspaceFolder}/practice_io/output.txt'"
       ],
+      "dependsOn": "Create build directory (Ubuntu)",
       "group": "build",
       "presentation": {
         "reveal": "always",
