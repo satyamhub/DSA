@@ -1,3 +1,5 @@
 /.cph
 /build
 *.exe
+autopush.sh
+autopush_every_sec.sh
