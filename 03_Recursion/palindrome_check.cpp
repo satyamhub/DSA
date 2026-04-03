@@ -9,6 +9,7 @@ Pattern: recursion, two pointers
 Sample Input:
 madam
 
+
 Sample Output:
 true
 
