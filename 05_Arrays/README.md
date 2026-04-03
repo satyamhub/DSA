@@ -28,5 +28,8 @@ This topic is split by difficulty.
 - `Medium/majority_elements.cpp`
 - `Medium/longest_subArray.cpp`
 - `Medium/count_pairs_divisible_by_60.cpp`
+- `Medium/two_sum.cpp`
+- `Medium/three_sum.cpp`
+- `Medium/four_sum.cpp`
 
 Recommended order: finish all `Easy/` files first, then move to `Medium/`.
