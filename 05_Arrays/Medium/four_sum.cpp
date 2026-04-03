@@ -54,7 +54,7 @@ vector<vector<int>> fourSumBrute(const vector<int> &nums, int target) {
 
 vector<vector<int>> fourSumBetter(vector<int> nums, int target) {
     sort(nums.begin(), nums.end());
-    vector<vector<int>> result;
+    set<vector<int>> uniqueQuads;
     int n = static_cast<int>(nums.size());
 
     for (int i = 0; i < n; i++) {
@@ -65,7 +65,7 @@ vector<vector<int>> fourSumBetter(vector<int> nums, int target) {
             while (left < right) {
                 long long sum = static_cast<long long>(nums[i]) + nums[j] + nums[left] + nums[right];
                 if (sum == target) {
-                    result.push_back({nums[i], nums[j], nums[left], nums[right]});
+                    uniqueQuads.insert({nums[i], nums[j], nums[left], nums[right]});
                     left++;
                     right--;
                 } else if (sum < target) {
@@ -77,7 +77,7 @@ vector<vector<int>> fourSumBetter(vector<int> nums, int target) {
         }
     }
 
-    return result;
+    return {uniqueQuads.begin(), uniqueQuads.end()};
 }
 
 vector<vector<int>> fourSumOptimal(vector<int> nums, int target) {

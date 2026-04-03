@@ -49,7 +49,7 @@ vector<vector<int>> threeSumBrute(const vector<int> &nums, int target) {
 
 vector<vector<int>> threeSumBetter(vector<int> nums, int target) {
     sort(nums.begin(), nums.end());
-    vector<vector<int>> result;
+    set<vector<int>> uniqueTriplets;
 
     for (int i = 0; i < static_cast<int>(nums.size()); i++) {
         if (i > 0 && nums[i] == nums[i - 1]) {
@@ -62,7 +62,7 @@ vector<vector<int>> threeSumBetter(vector<int> nums, int target) {
         while (left < right) {
             long long sum = static_cast<long long>(nums[i]) + nums[left] + nums[right];
             if (sum == target) {
-                result.push_back({nums[i], nums[left], nums[right]});
+                uniqueTriplets.insert({nums[i], nums[left], nums[right]});
                 left++;
                 right--;
             } else if (sum < target) {
@@ -73,7 +73,7 @@ vector<vector<int>> threeSumBetter(vector<int> nums, int target) {
         }
     }
 
-    return result;
+    return {uniqueTriplets.begin(), uniqueTriplets.end()};
 }
 
 vector<vector<int>> threeSumOptimal(vector<int> nums, int target) {
