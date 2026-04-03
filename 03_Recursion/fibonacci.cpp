@@ -6,6 +6,7 @@ Problem: Find nth Fibonacci number
 
 Pattern: recursion, iteration
 
+
 Sample Input:
 6
 
@@ -23,22 +24,27 @@ Approach 2: Iterative optimal solution
 - Space: O(1)
 */
 
-int fibonacciRecursive(int n) {
-    if (n <= 1) {
+int fibonacciRecursive(int n)
+{
+    if (n <= 1)
+    {
         return n;
     }
     return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2);
 }
 
-int fibonacciIterative(int n) {
-    if (n <= 1) {
+int fibonacciIterative(int n)
+{
+    if (n <= 1)
+    {
         return n;
     }
 
     int prev2 = 0;
     int prev1 = 1;
 
-    for (int i = 2; i <= n; i++) {
+    for (int i = 2; i <= n; i++)
+    {
         int current = prev1 + prev2;
         prev2 = prev1;
         prev1 = current;
@@ -47,7 +53,8 @@ int fibonacciIterative(int n) {
     return prev1;
 }
 
-int main() {
+int main()
+{
     int n;
     cin >> n;
 
