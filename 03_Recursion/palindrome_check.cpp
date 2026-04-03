@@ -17,6 +17,7 @@ Approach: Compare symmetric characters recursively
 - Space: O(n)
 */
 
+
 bool isPalindrome(const string &s, int index) {
     if (index >= static_cast<int>(s.size()) / 2) {
         return true;
