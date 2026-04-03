@@ -49,7 +49,8 @@
   "scm.diffDecorations": "all",
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
-  "files.autoSave": "onFocusChange",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
