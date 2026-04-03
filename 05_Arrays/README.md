@@ -33,4 +33,8 @@ This topic is split by difficulty.
 - `Medium/four_sum.cpp`
 - `Medium/k_sum.cpp`
 
+Note:
+- `2-sum`, `3-sum`, and `4-sum` are all special cases of `k-sum`.
+- Start with `two_sum.cpp` to learn the base pattern, then move to `three_sum.cpp` and `four_sum.cpp`, and finally use `k_sum.cpp` as the general template.
+
 Recommended order: finish all `Easy/` files first, then move to `Medium/`.
