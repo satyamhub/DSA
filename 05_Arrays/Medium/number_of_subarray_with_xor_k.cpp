@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int BruteSolution(int nums[], int k, int n) {
+int BetterSolution(int nums[], int k, int n) {
     int cnt = 0;
     for (int i = 0; i < n; i++) {
         int xorr = 0;
@@ -15,9 +15,18 @@ int BruteSolution(int nums[], int k, int n) {
     return cnt;
 }
 
-int BetterSolution(int nums[], int k, int n) {
+int OptimalSolution(int nums[], int k, int n) {
     int cnt = 0;
-    
+    int xorr = 0;
+    map<int, int> mpp;
+    mpp[xorr]++;
+    for (int i = 0; i < n; i++){
+        xorr ^= nums[i];
+        int x = xorr ^ k;
+        cnt += mpp[x];
+        mpp[xorr]++;
+    }
+    return cnt;
 }
 
 int main() {
@@ -31,8 +40,8 @@ int main() {
     cin >> k;
 
     //-----------Solution-----
-    // cout << BruteSolution(nums, k, n);
-    cout << BetterSolution(nums, k, n);
+    //cout << BetterSolution(nums, k, n);
+    cout << OptimalSolution(nums, k, n);
 
     return 0;
 }
