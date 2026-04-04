@@ -1,0 +1,1 @@
+{"name":"Local: number_of_subarray_with_xor_k","url":"/home/satyaminc/DSA/05_Arrays/Medium/number_of_subarray_with_xor_k.cpp","tests":[{"id":1775305889822,"input":"5\n4 2 2 6 4\n6","output":"4"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/satyaminc/DSA/05_Arrays/Medium/number_of_subarray_with_xor_k.cpp","group":"local","local":true}
