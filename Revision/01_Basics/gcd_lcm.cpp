@@ -41,6 +41,9 @@ also GCD(a,b) = GCD(a%b,b)  :a>b
 till one of the a or b becomes 0, then other is GCD
 And LCM=(a*b)/GCD
 
+TC:O(log fi(min(a,b)))
+SC:O(1)
+
 
 */
 
@@ -97,7 +100,7 @@ void solveOptimal(int a, int b) {
     } else {
         GCD = a;
     }
-    
+
     LCM /= GCD;
     cout << "GCD=" << GCD << " & LCM=" << LCM << endl;
 }
