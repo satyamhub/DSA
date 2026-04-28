@@ -86,7 +86,7 @@ vector<int> divisorsBetter(int x)
     sort(result.begin(), result.end());
     return result;
 }
-
+ 
 int main()
 {
     int x;
