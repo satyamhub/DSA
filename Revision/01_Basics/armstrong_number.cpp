@@ -15,7 +15,8 @@ Approach Hint: Extract digits, cube them, sum, and compare
 
 /*
 Brute---
-I will Just extract digits and Cube Them and Add them and check with original number
+I will Just extract digits and Power Them to their number of digit
+and Add them and check with original number.
 TC:O(Log(n) base 10)
 SC:O(1)
 */
@@ -23,10 +24,11 @@ SC:O(1)
 void solve(int n) {
     int temp = n;
     int sum = 0;
+    int power = log10(n) + 1;
     while (temp != 0) {
         int digit = temp % 10;
-        int cube = digit * digit * digit;
-        sum += cube;
+        int arm = pow(digit,power);
+        sum += arm;
         temp /= 10;
     }
     if (sum == n) {

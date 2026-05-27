@@ -16,12 +16,20 @@ Output:
 Approach Hint: Nested loops: i for rows, j for columns
 */
 
-void solve() {
+void solve(int n) {
     // Write your solution here
+    for (int i = 0; i < n; i++){
+        for (int j = 0; j < n; j++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
 }
 
 int main() {
     // Test cases
-    solve();
+    int n;
+    cin >> n;
+    solve(n);
     return 0;
 }
