@@ -13,12 +13,31 @@ Output: 6 (subarray: [4, -1, 2, 1])
 Approach Hint: Track current sum and max sum, reset when negative
 */
 
-void solve() {
-    // Write your solution here
+int solve(vector<int>&arr) {
+    int n = arr.size();
+    int maxi = INT_MIN;
+    int sum = 0;
+
+    for (int i = 0; i < n; i++){
+        sum += arr[i];
+        maxi = max(sum, maxi);
+        if(sum<0){
+            sum = 0;
+        }
+    }
+    return maxi;
 }
 
 int main() {
-    // Test cases
-    solve();
+    int n;
+    cin >> n;
+    vector<int> arr;
+    for (int i = 0; i < n; i++) {
+        int q;
+        cin >> q;
+        arr.push_back(q);
+    }
+
+    cout<<solve(arr);
     return 0;
 }

@@ -13,12 +13,31 @@ Output: [17, 5, 2]
 Approach Hint: Traverse right to left, track max
 */
 
-void solve() {
+void solve(vector<int>&arr) {
     // Write your solution here
+    int n = arr.size();
+    int maxi = INT_MIN;
+
+    for (int i = n-1; i >=0; i--){
+        if(arr[i]>maxi){
+            cout << arr[i]<<" ";
+        }
+        maxi = max(arr[i], maxi);
+    }
 }
+
 
 int main() {
     // Test cases
-    solve();
+    int n;
+    cin >> n;
+    vector<int> arr;
+    for (int i = 0; i < n; i++){
+        int q;
+        cin >> q;
+        arr.push_back(q);
+    }
+
+    solve(arr);
     return 0;
 }

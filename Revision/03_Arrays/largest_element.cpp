@@ -13,12 +13,28 @@ Output: 9
 Approach Hint: Iterate through and track maximum
 */
 
-void solve() {
+int solve(vector<int>&arr) {
     // Write your solution here
+    int n = arr.size();
+    int maxi = INT_MIN;
+    for (int i = 0; i < n; i++){
+        maxi = max(arr[i], maxi);
+    }
+    return maxi;
 }
 
 int main() {
     // Test cases
-    solve();
+    int n;
+    cin >> n;
+    vector<int> arr;
+
+    for (int i = 0; i < n;  i++){
+        int q;
+        cin >> q;
+        arr.push_back(q);
+    }
+
+    cout<<solve(arr);
     return 0;
 }

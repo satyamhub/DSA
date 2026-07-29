@@ -35,12 +35,12 @@ void moveZeroesBrute(vector<int> &arr) {
 }
 
 void moveZeroesOptimal(vector<int> &arr) {
-    int writeIndex = 0;
+    int j = 0;
 
-    for (int readIndex = 0; readIndex < static_cast<int>(arr.size()); readIndex++) {
-        if (arr[readIndex] != 0) {
-            swap(arr[writeIndex], arr[readIndex]);
-            writeIndex++;
+    for (int i = 0; i < arr.size(); i++) {
+        if (arr[i] != 0) {
+            swap(arr[i], arr[j]);
+            j++;
         }
     }
 }

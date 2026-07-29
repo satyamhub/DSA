@@ -56,12 +56,13 @@ bool isArmstrong(int x)
 {
     int original = x;
     int sum = 0;
+    int power = log10(x) + 1;
 
     while (x != 0)
     {
         int digit = x % 10;
         x /= 10;
-        sum += digit * digit * digit;
+        sum += pow(digit,power);
     }
 
     return sum == original;
@@ -86,7 +87,7 @@ vector<int> divisorsBetter(int x)
     sort(result.begin(), result.end());
     return result;
 }
- 
+
 int main()
 {
     int x;
